@@ -1,0 +1,188 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #5fa4f8;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid; /*Coloca os itens um ao lado do outro*/
+    grid-template-columns: 50% 50%;
+}
+
+.principal {
+    background-image: url("img/Background.png"); /*Usamos background-image no CSS quando a imagem é apenas ilustrativa, sem informação relevante e, caso ela não carregue, não afeta a experiência do usuário*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    align-items: center; /*Alinha de acordo com o display do elemento pai, como o flexbox e grid.*/
+    text-align: center; /*Alinha todos os elementos inline dentro do bloco*/
+    margin-bottom: 5em;
+}
+
+.container__caixa {
+    margin: 0 6em; /*2 valores: Top/bottom, right/left*/
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /*4 valores: Top, right, bottom, left*/
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 7px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+    font-weight: 700;
+}
+
+.container__botao:active {
+    background-color: #43428f;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.botao_secundario:hover {
+    opacity: 25%;
+    font-weight: 700;
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+    margin-top: -1em;
+}
+
+.secundario {
+    align-items: center;
+    margin: -2em 7em;
+}
+
+.secundario__imagem {
+    width: 90%;
+}
+
+.container__descricao {
+    padding: 0.5em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.5em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.imagem__telas {
+    margin-left: 4em;
+}
+
+.container__cursos {
+    margin-bottom: 7.5em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex; /*Coloca os itens um ao lado do outro*/
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__icones {
+    padding: 0 2em;
+}
+
+.dispositivos__icones:hover {
+    zoom: 102%;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 6em;
+}
+
+.rodape__logo {
+    margin: 5em 0 3em 0;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+}
+
+.lista__link a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--branco-principal);
+    padding: 0.5em;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    margin: 2em;
+}
